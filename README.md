@@ -76,7 +76,7 @@ Ethereum Cüzdanı
 Cüzdanınızı kaydedin ve Testnete başvurun.. 
 Yazar :[@muuustafasari](https://twitter.com/muuustafasari) 
 
-# DAHA FAZLA SORUNUZ VARSA KUJİRA TÜRKİYE TELEGRAM GRUBU:
+# DAHA FAZLA SORUNUZ VARSA PALOMA TÜRKİYE TELEGRAM GRUBU:
 
 [Telegram](https://t.me/PalomaTurkish)
 
