@@ -7,11 +7,11 @@ Merhaba Dostlarım, bu yazı da Paloma Ağı için Cüzdan Oluşturup. Kayıt ya
 Paloma Projesi Türkçe Kaynaklar
 
 
-Gereksinimler:
+Gereksinimler (minimum):
 ```
-4 vcpu 
+2 vcpu 
 16 ram 
-160 gb
+100 gb
 ```
 
 <h1 align="center">Paloma Node Kurulumu ve Cüzdan oluşturma</h1>
