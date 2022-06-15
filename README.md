@@ -7,22 +7,16 @@ Merhaba Dostlarım, bu yazı da Paloma Ağı için Cüzdan Oluşturup. Kayıt ya
 Paloma Projesi Türkçe Kaynaklar
 
 
-Öncelikle Kayıt Linki : https://docs.google.com/forms/d/e/1FAIpQLSdSviH22JzZ70wcKd1FTevPOiab7g4fyDA3WphKVpYlKBiqkQ/viewform
-
-
-
-# Gerekenler
-
-Paloma Cüzdanı 
-
-Ethereum Cüzdanı 
-
-1 Adet Sunucu
-
-
+Gereksinimler:
+```
+4 vcpu 
+16 ram 
+160 gb
+```
 
 <h1 align="center">Paloma Node Kurulumu ve Cüzdan oluşturma</h1>
 
+# Cüzdan oluşturduktan sonra dolduruyoruz: [Form](https://docs.google.com/forms/d/e/1FAIpQLSdSviH22JzZ70wcKd1FTevPOiab7g4fyDA3WphKVpYlKBiqkQ/viewform) 
 
 # Go Kurulumu
 
@@ -74,6 +68,17 @@ Ethereum Cüzdanı
 
 
 Cüzdanınızı kaydedin ve Testnete başvurun.. 
+
+
+# Paloma Tesnet
+
+17 -24 Haziran 
+
+15-22 Temmuz
+
+12-19 ağustos
+
+16-23 Eylül
 
 # DAHA FAZLA SORUNUZ VARSA PALOMA TÜRKİYE TELEGRAM GRUBU:
 
