@@ -74,7 +74,6 @@ Ethereum Cüzdanı
 
 
 Cüzdanınızı kaydedin ve Testnete başvurun.. 
-Yazar :[@muuustafasari](https://twitter.com/muuustafasari) 
 
 # DAHA FAZLA SORUNUZ VARSA PALOMA TÜRKİYE TELEGRAM GRUBU:
 
@@ -91,4 +90,5 @@ Teşekkürler <3
 [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="16px"> Telegram Chat   ](https://t.me/RuesChat)
 [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="16px"> Telegram Node   ](https://t.me/RuesNode)
 [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="16px"> Telegram Node Chat](https://t.me/RuesNodeChat)
+[@muuustafasari](https://twitter.com/muuustafasari) 
 
