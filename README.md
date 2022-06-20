@@ -19,6 +19,8 @@ Gereksinimler (minimum):
 
 Not: form kapandı, yeni form açılmadı, açılırsa telegramda duyururum, daha önce cüzdan kurduysanız script komutuna geçebilirsiniz.
 
+DAHA ÖNCE CÜZDAN KURDUYSANIZ CÜZDAN OLUŞTURMAYIN SCRİPT KISMINDAN BAŞLAYIN
+
 # Go Kurulumu
 
   
