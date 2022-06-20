@@ -1,10 +1,11 @@
 <h1 align="center">Paloma-Node-TR</h1>
 
-![paloma](https://user-images.githubusercontent.com/101149671/173926483-33d00bf3-861e-4e30-9339-e04360cbd16b.png)
+Paloma Türkiye: [Telegram](https://t.me/PalomaTurkish)
 
+Explorer: https://paloma.explorers.guru/validators
 
-Merhaba Dostlarım, bu yazı da Paloma Ağı için Cüzdan Oluşturup. Kayıt yapacaz..
-Paloma Projesi Türkçe Kaynaklar
+![image](https://user-images.githubusercontent.com/101149671/174652453-f36d6cf8-5466-4561-b070-1794e164b3fd.png)
+
 
 
 Gereksinimler (minimum):
@@ -16,7 +17,7 @@ Gereksinimler (minimum):
 
 <h1 align="center">Paloma Node Kurulumu ve Cüzdan oluşturma</h1>
 
-# Cüzdan oluşturduktan sonra dolduruyoruz: [Form](https://docs.google.com/forms/d/e/1FAIpQLSdSviH22JzZ70wcKd1FTevPOiab7g4fyDA3WphKVpYlKBiqkQ/viewform) 
+Not: form kapandı, yeni form açılmadı, açılırsa telegramda duyururum, daha önce cüzdan kurduysanız script komutuna geçebilirsiniz.
 
 # Go Kurulumu
 
@@ -33,7 +34,6 @@ Gereksinimler (minimum):
 
 # Kütüphane Kurulumu
 
-   
 
     cd $HOME
     sudo apt update
@@ -59,18 +59,36 @@ Gereksinimler (minimum):
     wget -O .paloma/config/genesis.json https://raw.githubusercontent.com/palomachain/testnet/master/livia/genesis.json
     wget -O .paloma/config/addrbook.json https://raw.githubusercontent.com/palomachain/testnet/master/livia/addrbook.json
 
-    
-# Cüzdan Oluşturma
+# Script:
+```
+wget -q -O paloma.sh https://api.rues.info/paloma.sh && chmod +x paloma.sh && sudo /bin/bash paloma.sh
+``` 
+# Cüzdanı Recover ediyoruz. (Form doldurmuştuk)
    
-    // <moniker-ismi> SİLİP İSMİNİZİ GİRİN
-    VALIDATOR=<moniker-ismi>
-    palomad keys add "$VALIDATOR"[/CODE][CODE][/CODE]
+cüzdan-ismi kısmını silip kendi cüzdan isminizi yazın.
+```
+WALLET=cüzdan-ismi
+palomad keys add $WALLET --recover
+```
 
+# Faucettan token talep edelim, link (açıldığında güncelleyeceğim eşleşin)
 
-Cüzdanınızı kaydedin ve Testnete başvurun.. 
+# Validatör oluşturalım:
+```
+palomad tx staking create-validator \
+  --amount 1000000grain \
+  --from $WALLET \
+  --commission-max-change-rate "0.01" \
+  --commission-max-rate "0.2" \
+  --commission-rate "0.07" \
+  --min-self-delegation "1" \
+  --pubkey  $(palomad tendermint show-validator) \
+  --moniker $MONIKER \
+  --chain-id chain-id \
+  --yes
+```
 
-
-# Paloma Tesnet
+# Paloma Tesnet Günleri
 
 17 -24 Haziran 
 
@@ -86,8 +104,9 @@ Cüzdanınızı kaydedin ve Testnete başvurun..
 
 Teşekkürler <3
 
-
 # Hesaplar:
+
+https://linktr.ee/ruesandora0
 
 [<img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="16px"> Twitter   ](https://twitter.com/Ruesandora0) 
 [<img src="https://cdn-icons-png.flaticon.com/512/1336/1336494.png" width="16px"> Forum   ](https://forum.rues.info/index.php)
@@ -95,5 +114,3 @@ Teşekkürler <3
 [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="16px"> Telegram Chat   ](https://t.me/RuesChat)
 [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="16px"> Telegram Node   ](https://t.me/RuesNode)
 [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="16px"> Telegram Node Chat](https://t.me/RuesNodeChat)
-[@muuustafasari](https://twitter.com/muuustafasari) 
-
