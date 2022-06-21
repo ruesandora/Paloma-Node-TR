@@ -89,6 +89,13 @@ palomad keys add $WALLET --recover
 
 # Faucettan token talep edelim, link (açıldığında güncelleyeceğim eşleşin)
 
+(cüzdan ismini değişin kendi cüzdanınız yapın)
+
+```
+ADDRESS="$(palomad keys show "cüzdanismi" -a)"
+JSON=$(jq -n --arg addr "$ADDRESS" '{"denom":"ugrain","address":$addr}') && curl -X POST --header "Content-Type: application/json" --data "$JSON" https://backend.faucet.palomaswap.com/claim
+```
+
 # Validatör oluşturalım:
 ```
 palomad tx staking create-validator \
