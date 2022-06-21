@@ -99,16 +99,19 @@ JSON=$(jq -n --arg addr "$ADDRESS" '{"denom":"ugrain","address":$addr}') && curl
 # Validatör oluşturalım:
 ```
 palomad tx staking create-validator \
-  --amount 1000000ugrain \
-  --from $WALLET \
-  --commission-max-change-rate "0.01" \
-  --commission-max-rate "0.2" \
-  --commission-rate "0.07" \
-  --min-self-delegation "1" \
-  --pubkey  $(palomad tendermint show-validator) \
-  --moniker $MONIKER \
-  --chain-id paloma-testnet-5 \
-  --yes
+--amount=950000ugrain \
+--pubkey=$(palomad tendermint show-validator) \
+--moniker nodeisminiz \
+--chain-id=paloma-testnet-5 \
+--commission-rate="0.10" \
+--commission-max-rate="0.20" \
+--commission-max-change-rate="0.01" \
+--min-self-delegation="1" \
+--from=cüzdanisminiz \
+--fees=10000ugrain \
+--gas=10000000 \
+--node "tcp://testnet.palomaswap.com:26657" \
+--yes
 ```
 
 # Paloma Tesnet Günleri
