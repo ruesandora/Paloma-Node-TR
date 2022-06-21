@@ -99,7 +99,7 @@ JSON=$(jq -n --arg addr "$ADDRESS" '{"denom":"ugrain","address":$addr}') && curl
 # Validatör oluşturalım:
 ```
 palomad tx staking create-validator \
-  --amount 1000000grain \
+  --amount 1000000ugrain \
   --from $WALLET \
   --commission-max-change-rate "0.01" \
   --commission-max-rate "0.2" \
