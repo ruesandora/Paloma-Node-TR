@@ -107,7 +107,7 @@ palomad tx staking create-validator \
   --min-self-delegation "1" \
   --pubkey  $(palomad tendermint show-validator) \
   --moniker $MONIKER \
-  --chain-id chain-id \
+  --chain-id paloma-testnet-5 \
   --yes
 ```
 
