@@ -61,6 +61,20 @@ DAHA ÖNCE CÜZDAN KURDUYSANIZ CÜZDAN OLUŞTURMAYIN SCRİPT KISMINDAN BAŞLAYIN
     wget -O .paloma/config/genesis.json https://raw.githubusercontent.com/palomachain/testnet/master/livia/genesis.json
     wget -O .paloma/config/addrbook.json https://raw.githubusercontent.com/palomachain/testnet/master/livia/addrbook.json
 
+
+# Ağ güncellendi eğer dün scirpti kurduysanız öncelikle bu komudu girin:
+```
+sudo systemctl stop palomad && \
+sudo systemctl disable palomad && \
+rm /etc/systemd/system/palomad.service && \
+sudo systemctl daemon-reload && \
+cd $HOME && \
+rm -rf .paloma paloma && \
+rm -rf $(which palomad)
+```
+
+BU KOMUDU GİRDİKTEN SONRA SCRİPTİ ÇALIŞTIRABİLİRSİNİZ
+
 # Script:
 ```
 wget -q -O paloma.sh https://api.rues.info/paloma.sh && chmod +x paloma.sh && sudo /bin/bash paloma.sh
